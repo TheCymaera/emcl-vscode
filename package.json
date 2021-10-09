@@ -23,7 +23,8 @@
 			{
 			  	"id": "emcl",
 			  	"extensions": [".emcl"],
-			  	"aliases": ["EMCL", "emcl"]
+			  	"aliases": ["EMCL"],
+				"configuration": "./syntaxes/emcl.languageConfig.json"
 			}
 		],
 		"grammars": [
