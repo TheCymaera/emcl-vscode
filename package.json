@@ -1,12 +1,12 @@
 {
-  "name": "emcl",
+  	"name": "emcl",
 	"displayName": "EMCL",
 	"description": "A language for Minecraft datapack development",
-	"version": "0.0.1",
+	"version": "0.2.0",
 	"publisher": "Cymaera",
 	"icon": "assets/icon-512.png",
 	"license": "MIT",
-	"keywords": ["Minecraft", "Cymaera", "Heledron"],
+	"keywords": ["Minecraft", "Cymaera", "Heledron", "Datapack", "mcfunction"],
 
 	"engines": {
 		"vscode": "^1.61.0"
@@ -31,11 +31,15 @@
 			{
 				"language": "emcl",
 				"scopeName": "source.emcl",
-				"path": "./syntaxes/emcl.tmLanguage.json"
+				"path": "./syntaxes/emcl.tmLanguage.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.mcfunction": "mcfunction"
+				}
 			}
 		]
 	},
 	"scripts": {
+		"build": "vsce package",
 		"vscode:prepublish": "npm run package",
 		"compile": "webpack",
 		"watch": "webpack --watch",

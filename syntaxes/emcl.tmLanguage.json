@@ -75,7 +75,7 @@
 			"patterns": [
 				{
 					"comment": "Control flow",
-					"match": "\\b(?:mccommand|mcsubcommand|import|for|while|if|else|execute)\\b",
+					"match": "\\b(?:mccommand|mcsubcommand|import|for|while|if|else|execute|return)\\b",
 					"name": "keyword.control.emcl"
 				},
 				{
@@ -90,12 +90,12 @@
 				},
 				{
 					"comment": "Data types",
-					"match": "\\b(?:int|float|bool|void|string|char)\\b",
+					"match": "\\b(?:byte|short|int|long|float|double|bool|void|string|char)\\b",
 					"name": "storage.type.emcl"
 				},
 				{
 					"comment": "Data type modifier",
-					"match": "\\b(?:const)\\b",
+					"match": "\\b(?:const|final)\\b",
 					"name": "storage.modifier.emcl"
 				}
 			]
